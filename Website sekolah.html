@@ -1,0 +1,113 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Website Kelas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Warna latar belakang gradient */
+        body {
+            background-color: #1b1b1b; /* Warna latar belakang yang lebih gelap */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #fff; /* Warna teks putih */
+        }
+        /* Kode CSS sebelumnya tetap ada di sini */
+        /* ... */
+
+        /* Tombol interaktif (semula tersembunyi) */
+        .button-container {
+            text-align: center;
+            display: none;
+        }
+        .show-button {
+            display: block;
+        }
+        /* Susunan teks dan gambar */
+        .container {
+            text-align: center;
+        }
+        .profile-picture {
+            margin-bottom: 20px;
+        }
+        .profile-picture img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Susunan teks */
+        .text-container {
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="jpg.jpg" alt="Foto Kelas">
+            <center><h1>Selamat Datang di Kelas XPPLG C</h1></center>
+        </div>
+    </header>
+    <div class="container">
+        <div class="profile-picture">
+            <img src="ya.jpg" alt="Foto Profil">
+        </div>
+        <div class="image-container">
+            <img src="informasi.jpg" alt="Gambar Informasi" id="gambar-info">
+        </div>
+        <div class="text-container">
+            <h2>Informasi</h2>
+            <p>KELAS KAMI ADALAH KELAS YANG AKTIF DAN PINTAR!!.</p>
+    
+            <!-- Tautan Instagram -->
+            <p>
+                <i class="fa fa-instagram"></i>
+                Ikuti kami di Instagram: <a href="https://instagram.com/xpplgc20_smkn1pdh?igshid=OGQ5ZDc2ODk2ZA==">@xpplgc20_smkn1pdh</a>
+            </p>
+    
+            <!-- Tautan WhatsApp -->
+            <p>
+                <i class="fa fa-whatsapp"></i>
+                Hubungi kami di WhatsApp: <a href="https://wa.me/6285846618911">Nomor WhatsApp</a>
+            </p>
+        </div>
+        
+        <!-- Tombol interaktif -->
+        <div class="button-container">
+            <button onclick="showButton()">Tampilkan Tombol</button>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan tombol saat gambar di klik
+        function showButton() {
+            document.getElementById('gambar-info').addEventListener('click', function () {
+                document.querySelector('.button-container').classList.add('show-button');
+            });
+        }
+    </script>
+</body>
+</html>
